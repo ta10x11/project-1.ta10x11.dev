@@ -1,0 +1,329 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+*:not(i) {
+    font-family: "Poppins", sans-serif;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    background-color: #ffffff;
+    padding: 3rem 5rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+nav a {
+    font-size: 1.8rem;
+    text-decoration: none;
+}
+
+nav a#logo {
+    color: #000000;
+    font-weight: 700;
+}
+
+nav ul a {
+    color: #000000;
+    font-weight: 600;
+}
+
+nav ul a:hover {
+    border-bottom: 2px solid #b0d1cd;
+    color: rgb(240, 169, 222);
+    transition: all 0.3s ease-in;
+}
+
+
+
+#ham-menu {
+    display: none;
+}
+
+nav ul.active {
+    left: 0;
+}
+
+nav a img {
+    width: 25%;
+}
+
+nav button {
+    background: linear-gradient(to right, #4535aa, #ed639e);
+    width: 10%;
+    height: 44px;
+    border-radius: 4px;
+}
+
+nav button a {
+    color: white;
+}
+
+nav button:hover {
+    background: #4535aa;
+    transition: all 1s ease-in;
+    cursor: pointer;
+}
+
+#home {
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    color: black;
+    justify-content: left;
+}
+
+#home h1 {
+    padding: 2;
+    margin: 15% -34% 0% -81%;
+    color: #4535aa;
+    font-size: 5em;
+
+}
+
+#home p {
+    font-size: 3em;
+    max-width: 54%;
+    margin: 0% 0% 0% -39%;
+    text-align: center;
+}
+
+#home div img {
+
+    margin: -76% 0% 0% 82%;
+}
+
+#image-box img {
+    height: 3lh;
+    padding: 7px;
+    margin: 0% -5% 0% 6%;
+}
+
+#services h1 {
+    font-size: 5em;
+    text-align: center;
+    margin: 10% 0% 0% 0%;
+    color: #6f6262d9;
+}
+
+.column {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+    margin: 5% 0% 0% 7%;
+}
+
+.row {
+    justify-content: center;
+    align-items: center;
+
+}
+
+.row:after {
+    content: "";
+    display: inline-block;
+    clear: both;
+    justify-content: center;
+}
+
+
+.card {
+    padding: 16px;
+    text-align: center;
+    background-color: #fffdfd;
+    height: 27lh;
+    border: 2px solid rgb(189, 186, 186);
+    border-radius: 6px;
+}
+
+.card:hover {
+    box-shadow: 3px 16px 30px -4px rgb(133 66 189 / 68%);
+}
+
+.card img {
+    height: 40%;
+}
+
+.card h3 {
+    font-size: 3em;
+}
+
+.card p {
+    font-size: 1.1em;
+}
+
+.card a {
+    text-decoration: none;
+    font-size: 2em;
+    color: rgb(184, 172, 172);
+}
+
+.card a:hover {
+    text-decoration: none;
+    font-size: 2em;
+    color: rgb(130, 199, 236);
+}
+
+#about img {
+    margin: 8% 0% 0% 0%;
+}
+
+
+#about h1 {
+    text-align: center;
+    float: right;
+    margin: 10% 0% 0% 0%;
+    max-width: 56%;
+    font-size: 4em;
+}
+
+#about p {
+    text-align: center;
+    float: right;
+    margin: -23% 0% 0% 0%;
+    max-width: 56%;
+    font-size: 2rem;
+}
+
+
+.generate h1 {
+    text-align: center;
+    margin: 10% 0% 0% 25%;
+    max-width: 56%;
+    font-size: 4em;
+}
+
+.blank {
+    display: none;
+}
+
+
+.column1 {
+    float: left;
+    width: 25%;
+    padding: 0px 0px;
+    margin: 3% 9% 0% 7%;
+}
+
+
+
+.card1 {
+    padding: 16px;
+    text-align: center;
+    background-color: #fffdfd;
+    height: 18lh;
+    width: 34vw;
+    border: 2px solid rgb(189, 186, 186);
+    border-radius: 6px;
+    margin: 0% 0% 0% 26%;
+}
+
+.card1:hover {
+    box-shadow: 3px 16px 30px -4px rgb(133 66 189 / 68%);
+}
+
+.card1 img {
+    height: 40%;
+}
+
+.card1 h3 {
+    font-size: 2em;
+}
+
+.card1 p {
+    font-size: 1.1em;
+}
+
+.card1 a {
+    text-decoration: none;
+    font-size: 2em;
+    color: rgb(184, 172, 172);
+}
+
+.card1 a:hover {
+    text-decoration: none;
+    font-size: 2em;
+    color: rgb(130, 199, 236);
+}
+
+.blank1 {
+    margin: 0% 0% 60% 1%;
+    visibility: hidden;
+}
+
+.backgrou{
+    background: linear-gradient(to right, #4535aa, #ed639e);
+    width: 85vw;
+    height: 23lh;
+    justify-content: center;
+    align-items: center;
+    margin: 0% 0% 0% 9%;
+    border-radius: 15px;
+
+}
+.backgrou h1{
+    margin: 0% 0% 4% 9%;
+    padding: 60px 0px 0px 0px;
+    color: white;
+    font-size: 4em;
+
+}
+
+.backgrou p{
+    font-size: 1.4rem;
+    color: white;
+    max-width: 60vw;
+    padding: 5px 34px;
+    box-sizing: border-box;
+}
+.backgrou button{
+    float: right;
+    background: linear-gradient(to right, #8ae1df, #c57ddf);
+    width: 11%;
+    height: 53px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    padding: 0px 0px 0px 0px;
+    margin: -7% 8% 0% 0%;
+    cursor: pointer;
+    border-radius: 7px;
+
+}
+.backgrou button a{
+    color: white;
+    font-size: 1.6rem;
+    padding: 2px;
+    text-decoration: none;
+
+}
+
+footer{
+    background-color: rgb(141, 136, 137);
+    margin: 6% 0% 0% 0%;
+    height: 7lh;
+}
+footer h1{
+    text-align: center;
+    padding: 30px 0px 0px 0px;
+    box-sizing: border-box;
+    color: white;
+}

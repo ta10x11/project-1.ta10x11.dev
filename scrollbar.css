@@ -1,0 +1,11 @@
+::-webkit-scrollbar{
+    width: 5px;
+}
+::-webkit-scrollbar-track{
+    color: blue;
+    background-color: black;
+}
+::-webkit-scrollbar-thumb{
+    color: pink;
+    background-color: purple;
+}
